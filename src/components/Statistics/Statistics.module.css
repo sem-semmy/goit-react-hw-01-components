@@ -1,0 +1,49 @@
+.statistics {
+    display: flex;
+    flex-direction: column;
+    background-color: #cacaca;
+}
+
+.title {
+    color: rgb(95, 94, 94);
+    padding: 55px 150px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.stat_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.item:nth-child(1n) {
+    background-color: lightyellow;
+
+}
+
+.item:nth-child(2n) {
+    background-color: lightgreen;
+}
+
+.item:nth-child(3n) {
+    background-color: lightblue;
+}
+
+/* .item:nth-child(4n) {
+    background-color: rgb(255, 166, 166);
+}
+
+.item:nth-child(5n) {
+    background-color: rgb(138, 182, 150);
+
+} */
+

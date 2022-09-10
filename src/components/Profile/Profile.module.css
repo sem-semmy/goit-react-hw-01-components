@@ -1,0 +1,11 @@
+.profile {
+    padding-bottom: 60px;
+}
+.stats {
+    display: flex;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(97, 184, 208);
+}
