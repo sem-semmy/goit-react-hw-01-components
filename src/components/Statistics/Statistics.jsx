@@ -24,26 +24,16 @@ const Statistics = ({ title, stats }) => {
   );
 };
 
-// Statistics.propTypes = {
-//   title: PropTypes.string.isRequired,
-// }
 
-// Statistics.propTypes = {
-//   data: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       label: PropTypes.string.isRequired,
-//       percentage: PropTypes.number.isRequired,
-//     })
-//   ),
-// };
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.shape({
-    id: PropTypes.string,
-    label: PropTypes.string,
-    percentage: PropTypes.number,
-  }),
+  stats: PropTypes.arrayOf(
+  PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+  }).isRequired
+  ).isRequired,
 };
 
 export default Statistics;
